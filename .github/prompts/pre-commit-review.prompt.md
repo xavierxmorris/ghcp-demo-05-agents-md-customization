@@ -1,5 +1,5 @@
 ---
-mode: ask
+agent: ask
 description: Structured pre-commit self-review against this repo's conventions.
 ---
 

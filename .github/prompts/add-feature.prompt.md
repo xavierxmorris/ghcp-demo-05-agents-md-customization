@@ -1,5 +1,5 @@
 ---
-mode: agent
+agent: agent
 description: Guided template for adding a new feature with tests and docs.
 ---
 

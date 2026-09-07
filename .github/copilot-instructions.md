@@ -1,8 +1,9 @@
 # Copilot Instructions — repo-wide
 
-These rules apply to every Copilot Chat reply and every completion across
-this repository unless a more specific `.github/instructions/*.instructions.md`
-file overrides them for a path.
+These rules provide repository-wide Copilot Chat guidance. Applicable
+`.github/instructions/*.instructions.md` files add path-specific guidance.
+Keep the files consistent rather than relying on an ordering guarantee.
+VS Code inline completions do not use these custom instructions.
 
 ## Language & version
 - Python 3.10+. Use modern syntax (`|` union types, `match` where it reads
@@ -26,7 +27,7 @@ file overrides them for a path.
 ## Testing
 - `pytest` only — no `unittest`.
 - One assert per test where reasonable; many small tests beats one big one.
-- Use `pytest.parametrize` for table-driven tests.
+- Use `pytest.mark.parametrize` for table-driven tests.
 - Fixtures live in `tests/conftest.py`.
 
 ## Dependencies
